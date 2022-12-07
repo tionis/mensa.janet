@@ -1,6 +1,6 @@
 (use spork)
 (import http)
-(import wanda/date)
+(import chronos :as "date")
 (import ./weird-csv)
 
 (defn get-week [&opt week-number]

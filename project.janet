@@ -3,7 +3,7 @@
   :description "mensa helper for uni passau"
   :dependencies ["https://github.com/janet-lang/spork"
                  "https://github.com/joy-framework/http"
-                 "https://tasadar.net/tionis/wanda"] # ditch this dependency for a general date library once its no longer part of wanda
+                 "https://tasadar.net/tionis/chronos"]
   :author "tionis.dev"
   :license "MIT"
   :url "https://tasadar.net/tionis/mensa.janet"
