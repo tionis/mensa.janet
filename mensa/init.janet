@@ -6,6 +6,7 @@
 (defn get-week [&opt week-number]
   (default week-number (date/get-week-number))
   (def raw_data (weird-csv/parse ((http/get (string "https://www.stwno.de/infomax/daten-extern/csv/UNI-P/" week-number ".csv")) :body)))
+  # TODO change encoding from ISO8859_1 to UTF-8 here
   (def mapping (first raw_data))
   (def formatted_data
     (map (fn [x]
